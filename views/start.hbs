@@ -1,0 +1,126 @@
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<style>
+
+
+.button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+</style>
+
+<div style="width:100%;height:1000px;">
+  <img src="hiii.jpg" style="width: 100%;height:1000px;"/>
+</div>
+
+<nav  class="navbar navbar-expand-sm" id="yoyo" style=" background-color:rgb(209, 152, 152);hieght:20px;padding-top:20px;">
+  
+  <ul style="width: 100%; list-style-type:none">
+    <li style="float: left;" >
+      <button class="button glow-button" >HOME</button>
+    </li>
+    <li style="float: right;position:absolute;right:170px" >
+       <button class="button glow-button"  onclick="window.location.href = '/logo';">SIGNUP</button>
+    </li>
+    <li style="float:right;position:absolute;right:15px" >
+        <button class="button glow-button"  onclick="window.location.href = '/hii';">LOGIN</button>
+    </li>
+  </ul>
+
+</nav>
+<script>
+var c=document.getElementById('yoyo');
+window.onscroll=function()
+{
+  var scrollPosY = window.pageYOffset;
+  if(scrollPosY > 1000) {
+          c.classList.add("fixed-top");
+  }
+  else if(scrollPosY<1000){
+    c.classList.remove("fixed-top");
+  }
+}
+
+</script>
+<div class="row" style="margin-top:170px;" data-aos="fade-up-right">
+  <div class="col-sm-6">
+ <img src="mi.png" class="rounded" style="height: 350px; width:100%"/>
+  </div>
+  <div class="col-sm-6">
+    <p class="display2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perspiciatis. Facere nesciunt natus, modi animi optio quaerat unde magnam, cumque dolor molestiae ab consequuntur! Quia quibusdam tenetur iusto itaque sint.</p>
+  </div>
+</div>
+<hr>
+<div class="row" style="margin-top:20px;margin-bottom:20px;" data-aos="fade-up-left">
+  <div class="col-sm-6">
+    <p class="display2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perspiciatis. Facere nesciunt natus, modi animi optio quaerat unde magnam, cumque dolor molestiae ab consequuntur! Quia quibusdam tenetur iusto itaque sint.</p>
+  </div>
+    <div class="col-sm-6">
+ <img src="mi.png" style="height: 360px; width:100%" class="rounded"/>
+  </div>
+</div>
+<center><div class="row rounded" style="background-color: rgb(250, 248, 248);height:200px;margin-bottom:20px;width:90%;">
+ <div class="col-sm-3">
+   <img src="mi.png" class="mr-1 mt-3 rounded-circle" data-aos="fade-right" style="width:100%;" />
+ </div>
+  <div class="col-sm-3">
+    <img src="mi.png" class="mr-1 mt-3 rounded-circle" data-aos="fade-down" style="width:100%;" />
+ </div>
+  <div class="col-sm-3">
+  <img src="mi.png" class="mr-1 mt-3 rounded-circle" data-aos="fade-up" style="width:100%;" />  
+ </div>
+  <div class="col-sm-3">
+   <img src="mi.png" class="mr-1 mt-3 rounded-circle" data-aos="fade-left" style="width:100%;" />
+ </div>
+</div>
+</center>
+<div id="demo" class="carousel slide" data-ride="carousel" >
+
+ 
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active"style="height: 600px;">
+      <img src="hiii.jpg" alt="Los Angeles" style="width: 100%; hieght:700px;">
+    </div>
+    <div class="carousel-item" style="height: 600px;">
+      <img src="main.jpg" alt="Chicago" style="width: 100%; hieght:700px;">
+    </div>
+    <div class="carousel-item" style="height: 600px;">
+      <img src="mi.png" alt="New York" style="width: 100%; hieght:700px;">
+    </div>
+  </div>
+
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+<div style="width:100%;height:400px;background-color:blueviolet;margin-top:20px; ">
+</div>

@@ -1,0 +1,195 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+.sidebar{
+
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 200;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    visibility: visible;
+  }
+  
+  .openbtn:hover {
+    color: black;
+  }
+  .navbar{
+      z-index: 1;
+      background-color: rgba(114, 7,247, 0.54);
+      padding:0 10px ;
+  }
+  .navbar .nav-item{
+      justify-content: center;
+      padding: 3px;
+      margin: 0 2em;
+  }
+  .navbar .nav-item .nav-link{
+      color: black;
+      font-weight: 40px;
+      font-size: 20px ;
+      
+  } 
+#userpro{
+    position: absolute;
+    right: 20px;
+}
+.nav-item:active{
+    background: rgba(255, 255, 255, 0.1);
+}
+.active {
+     border-bottom:1px solid white;
+     background: rgba(255, 255, 255, 0.1);
+}
+.topPe{
+    width: 100%;
+    height: 300px;
+    background-image:url("ali-abdul-rahman-TS5Pi8jqJZY-unsplash.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.searchbar{
+    width: 500px;
+    height: 32px;
+    padding: 10px;
+    padding-left:60px;
+    color: white;
+    font-size: 20px;
+    border: 2px rgb(77, 77, 77) solid;
+    border-radius:20px;
+    background-color:rgba(255,255,255,0.2);
+    position: relative;
+    top: 150px;
+    left: 50%;
+}
+input:focus{
+    outline: none;
+}
+.fa-search{
+    font-size: 40px;
+    color: white;
+}
+#searchHai{
+    display: block;
+}
+.suggestMain{
+    float: left;
+}
+.suggest{
+    border: 1.5px black solid;
+    border-radius: 12px;
+    height: 450px;
+    width: 200px;
+    margin: 2em;
+    overflow-y:scroll;
+}
+.suggest::-webkit-scrollbar {
+    width: 10px;
+  }
+.suggest::-webkit-scrollbar-track{
+  margin:5px ;
+  overflow:hidden;
+}
+.suggest::-webkit-scrollbar-thumb{
+    background: rgb(126, 125, 125);
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+.suggestList{
+    margin-bottom: 40px;
+    list-style: none;
+    
+    
+}
+.suggestHead{
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    margin-top: 2em;
+    margin-left: 1.9em;   
+    margin-bottom: 0px;
+}
+.suggest .suggestList .suggestItems{
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    
+}
+.suggest .suggestList .suggestItems li{
+    margin-bottom: 2em;
+    
+}
+.suggest .suggestList .suggestItems a{
+    color: black;
+    
+}
+.contentMain{
+
+    margin: 2em;
+    margin-right: 3em;
+    height: 550px;
+    width: 800px;
+    overflow-y: scroll;
+}
+.contentMain::-webkit-scrollbar{
+    width: 0;
+}
+.contentHai{
+    margin:20px;
+    position: relative;
+    justify-content: center;
+    border: none;
+    box-shadow: 1 0 10px rgb(150, 149, 149), 0 0 15px rgb(184, 184, 184);
+}
+.contentBody{
+    border: none;
+    border-radius: 12px;
+    background: rgb(223, 222, 222);
+    padding: 20px;
+}
+.contentBody .imageHai img{
+    display: flex;
+    width:100% ;
+    height:20em ;
+    justify-content: center;
+}
